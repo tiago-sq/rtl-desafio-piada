@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("Teste do App Jokes", () => {
+  test('exibe o título "Piadas do Chuck Norris" na tela', () => {
+    render(<App />);
+
+  });
+
+  test("exibe o corpo da piada na tela", async () => {
+
+  });
 });
